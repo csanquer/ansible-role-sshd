@@ -1,0 +1,11 @@
+---
+- name: copy sshd server config
+  template:
+    src: sshd_config.j2
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 'u=rw,g=r,o=r'
+    backup: yes
+    force: no
+  notify: restart ssh server

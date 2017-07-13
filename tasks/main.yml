@@ -12,3 +12,7 @@
 - include: copy.yml
   tags:
   - sshd
+
+- include: configure.yml
+  tags:
+  - sshd

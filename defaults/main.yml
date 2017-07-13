@@ -18,3 +18,14 @@ ssh_server_host_keys_to_copy: {}
     #     file: ssh_host_ed25519_key
     #     private:
     #     public:
+
+sshd_port: 22
+sshd_permit_root_login: 'prohibit-password'
+sshd_password_authentication: 'yes'
+sshd_challenge_response_authentication: 'no'
+sshd_use_pam: 'yes'
+
+sshd_gateway_ports: 'no'
+sshd_allow_tcp_forwarding: 'no'
+sshd_allow_stream_local_forwarding: 'no'
+sshd_x11_forwarding: 'no'
